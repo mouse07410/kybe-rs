@@ -51,7 +51,7 @@ pub fn decode_to_polyvec<const N: usize, const D: usize>(
     bs: ByteArray,
     ell: usize,
 ) -> PolyVec3329<N, D> {
-    let k = bs.data.len() / (32 * ell);
+    let _k = bs.data.len() / (32 * ell);
     let mut b = bs;
     let mut p_vec = PolyVec3329::from_vec([Poly3329::init(); D]);
 

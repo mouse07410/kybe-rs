@@ -170,7 +170,7 @@ fn rev_ntt<const N: usize>(p_hat: &Poly3329<N>) -> Poly3329<N> {
     for i in 0..=(N - 1) / 2 {
         let mut p0 = p_hat[0];
         let mut p1 = p_hat[1];
-        let z = F3329::from_int(ZETAS_256[((256 - i) % 256)]);
+        let z = F3329::from_int(ZETAS_256[(256 - i) % 256]);
 
         for j in 1..=(N - 1) / 2 {
             let index = (2 * byte_rev(i) * j) % 256;

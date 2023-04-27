@@ -8,7 +8,8 @@ license = "MIT"
 readme = "README.md"
 keywords = ["crypto", "lattice", "kyber", "pke", "kem"]
 categories = ["cryptography", "science"]
-repository = "https://github.com/rust-crypto-labs/kybe-rs"
+#repository = "https://github.com/rust-crypto-labs/kybe-rs"
+repository = "https://github.com/mouse07410/kybe-rs"
 
 [dependencies]
 sha3 = "0.8.0"

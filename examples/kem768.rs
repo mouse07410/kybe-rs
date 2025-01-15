@@ -7,5 +7,6 @@ fn main() {
     let (ctx, _shk) = kem.encaps(&pk);
     let shk2 = kem.decaps(&ctx, &sk);
 
-    println!("{:?}", shk2);
+    println!("Encapsulated: {:?}", _shk);
+    println!("Decapsulated: {:?}", shk2);
 }
